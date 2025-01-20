@@ -60,7 +60,7 @@ int main() {
 
 ## Running benchmark
 
-DESTO's performance can be assessed using the GRE benchmarking tool. We have integrated DESTO into GRE as "[GRE_DESTO](https://github.com/WangHui025/GRE_DESTO)", which is a fork of GRE. In GRE_DESTO, you can assess the performance of DESTO comprehensively. Additionally, the concurrent version of DESTO, DESTOOL, is also included in GRE_DESTO, and can be found at [DESTOOL](https://github.com/WangHui025/destool).
+DESTO's performance can be assessed using the GRE benchmarking tool. We have integrated DESTO into GRE as "[GRE_DESTO](https://github.com/WangHui025/GRE_DESTO)", which is a fork of GRE. In GRE_DESTO, you can assess the performance of DESTO comprehensively. Additionally, the concurrent version of DESTO, DESTOOL, is also included in GRE_DESTO, and can be found at "[DESTOOL](https://github.com/WangHui025/destool)".
 
 
 
