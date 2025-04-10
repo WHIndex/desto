@@ -283,15 +283,6 @@ TBB_tbb_LIBRARY_DEBUG:FILEPATH=TBB_tbb_LIBRARY_DEBUG-NOTFOUND
 TBB_tbb_LIBRARY_RELEASE:FILEPATH=/usr/local/lib64/libtbb.so
 
 //Value Computed by CMake
-desto_BINARY_DIR:STATIC=/home/wanghui/gre/lift/build
-
-//Value Computed by CMake
-desto_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-desto_SOURCE_DIR:STATIC=/home/wanghui/gre/lift
-
-//Value Computed by CMake
 lift_BINARY_DIR:STATIC=/home/wanghui/gre/lift/build
 
 //Value Computed by CMake

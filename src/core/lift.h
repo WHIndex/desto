@@ -42,7 +42,7 @@ typedef uint8_t bitmap_t;
 #endif
 
 template<class T, class P, bool USE_FMCD = true>
-class LIPP
+class LIFT
 {
     inline int compute_gap_count(int size) {
         // if (size >= 1000000) return 1;
@@ -82,7 +82,7 @@ class LIPP
 public:
     typedef std::pair<T, P> V;
 
-    typedef LIPP<T, P> self_type;
+    typedef LIFT<T, P> self_type;
 
     class Iterator;
 
@@ -102,7 +102,7 @@ public:
     };
     DerivedParams derived_params_;
 
-    LIPP(double BUILD_LR_REMAIN = 0, bool QUIET = true)
+    LIFT(double BUILD_LR_REMAIN = 0, bool QUIET = true)
         : BUILD_LR_REMAIN(BUILD_LR_REMAIN), QUIET(QUIET) {
         {
             std::vector<Node*> nodes;
@@ -123,7 +123,7 @@ public:
 
         root = build_tree_none();
     }
-    ~LIPP() {
+    ~LIFT() {
         destroy_tree(root);
         root = NULL;
         destory_pending();
