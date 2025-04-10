@@ -60,7 +60,7 @@ int main() {
 
 ## Running benchmark
 
-LIFT's performance can be assessed using the GRE benchmarking tool. We have integrated LIFT into GRE as "[GRE_LIFT](https://github.com/WangHui025/GRE_LIFT)", which is a fork of GRE. In GRE_LIFT, you can assess the performance of LIFT comprehensively. Additionally, the concurrent version of LIFT, LIFTOL, is also included in GRE_LIFT, and can be found at "[LIFTOL](https://github.com/WangHui025/liftol)".
+LIFT's performance can be assessed using the GRE benchmarking tool. We have integrated LIFT into GRE as "[GRE_LIFT](https://github.com/WHIndex/GRE_LIFT)", which is a fork of GRE. In GRE_LIFT, you can assess the performance of LIFT comprehensively. Additionally, the concurrent version of LIFT, LIFTOL, is also included in GRE_LIFT, and can be found at "[LIFTOL](https://github.com/WHIndex/liftol)".
 
 
 
