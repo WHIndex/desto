@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/wanghui/gre/lift/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

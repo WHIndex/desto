@@ -17,7 +17,7 @@
 
 #define USE_LZCNT 1
 
-namespace desto::lnode {
+namespace lift::lnode {
 
 template <class T, class P>
 class LNode {

@@ -1,7 +1,7 @@
-#ifndef __DESTO_H__
-#define __DESTO_H__
+#ifndef __LIFT_H__
+#define __LIFT_H__
 
-#include "desto_base.h"
+#include "lift_base.h"
 #include "node.h"
 #include <stdint.h>
 #include <math.h>
@@ -16,7 +16,7 @@
 #include <set>
 #include "piecewise_linear_model.hpp"
 
-namespace desto {
+namespace lift {
 
 typedef uint8_t bitmap_t;
 #define BITMAP_WIDTH (sizeof(bitmap_t) * 8)
@@ -1109,8 +1109,8 @@ private:
         for (int i = 0; i < _size; ++i) {
             key_value.emplace_back(_keys[i], _values[i]);
         }
-        // first_keys = desto::internal::segment_linear_optimal_model_fk(key_value, _size, 64);
-        fk_values = desto::internal::segment_linear_optimal_model_fk_value(key_value, _size, 64);
+        // first_keys = lift::internal::segment_linear_optimal_model_fk(key_value, _size, 64);
+        fk_values = lift::internal::segment_linear_optimal_model_fk_value(key_value, _size, 64);
         int fk_size = fk_values.size();
         std::vector<T> first_keys(fk_size);
         for (size_t i = 0; i < fk_size; ++i) {
@@ -1508,13 +1508,13 @@ private:
         }
         cur_bitmap_data_ = cur_leaf_->bitmap_[cur_bitmap_idx_];
       }
-      uint64_t bit = desto::lnode::extract_rightmost_one(cur_bitmap_data_);
-      cur_idx_ = desto::lnode::get_offset(cur_bitmap_idx_, bit);
-      cur_bitmap_data_ = desto::lnode::remove_rightmost_one(cur_bitmap_data_);
+      uint64_t bit = lift::lnode::extract_rightmost_one(cur_bitmap_data_);
+      cur_idx_ = lift::lnode::get_offset(cur_bitmap_idx_, bit);
+      cur_bitmap_data_ = lift::lnode::remove_rightmost_one(cur_bitmap_data_);
     }
   };    
 
 };
 
-#endif // __DESTO_H__
+#endif // __LIFT_H__
 }

@@ -41,7 +41,7 @@ typedef unsigned __int32 uint32_t;
 #define forceinline inline
 #endif
 
-namespace desto::lnode {
+namespace lift::lnode {
 
 /*** Linear model and model builder ***/
 
